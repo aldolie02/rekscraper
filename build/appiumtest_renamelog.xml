@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yguard version="1.5">
+<!--
+  yGuard Bytecode Obfuscator, v4.1.1, a Product of yWorks GmbH - http://www.yworks.com
+
+  Logfile created on Sat Oct 19 08:53:02 ICT 2024
+
+  Jar file to be obfuscated:           botocrypto-1.3-BREADNBUTTER_unobf.jar
+  Target Jar file for obfuscated code: botocrypto-1.3-BREADNBUTTER.jar
+
+-->
+<!--
+  Memory in use after class data structure built: 59123984 bytes
+  Total memory available                        : 268435456 bytes
+-->
+<expose>
+  <class name="com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO"/>
+  <field class="com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO" name="dc_x_password"/>
+  <field class="com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO" name="email"/>
+  <field class="com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO" name="perangkat"/>
+  <field class="com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO" name="referralCode"/>
+  <field class="com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO" name="cryptoType"/>
+  <field class="com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO" name="dc_x_username"/>
+  <field class="com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO" name="email_password"/>
+  <method class="com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO" name="java.lang.String getPerangkat()"/>
+  <method class="com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO" name="void setEmail(java.lang.String)"/>
+  <method class="com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO" name="java.lang.String getReferralCode()"/>
+  <method class="com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO" name="java.lang.String getDc_x_username()"/>
+  <method class="com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO" name="void setDc_x_username(java.lang.String)"/>
+  <method class="com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO" name="void setPerangkat(java.lang.String)"/>
+  <method class="com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO" name="void setCryptoType(java.lang.String)"/>
+  <method class="com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO" name="void setDc_x_password(java.lang.String)"/>
+  <method class="com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO" name="void setEmail_password(java.lang.String)"/>
+  <method class="com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO" name="java.lang.String getCryptoType()"/>
+  <method class="com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO" name="java.lang.String getEmail_password()"/>
+  <method class="com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO" name="void setReferralCode(java.lang.String)"/>
+  <method class="com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO" name="java.lang.String getDc_x_password()"/>
+  <method class="com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO" name="java.lang.String getEmail()"/>
+  <class name="com.bnaeqa.botocrypto.Main"/>
+  <method class="com.bnaeqa.botocrypto.Main" name="void main(java.lang.String[])"/>
+</expose>
+<map>
+  <package name="com.bnaeqa.botocrypto.service" map="A"/>
+  <class name="com.bnaeqa.botocrypto.service.BreadNButterService" map="A"/>
+  <field class="com.bnaeqa.botocrypto.service.BreadNButterService" name="findElement" map="A"/>
+  <field class="com.bnaeqa.botocrypto.service.BreadNButterService" name="uuid" map="B"/>
+  <field class="com.bnaeqa.botocrypto.service.BreadNButterService" name="log" map="C"/>
+  <field class="com.bnaeqa.botocrypto.service.BreadNButterService" name="lastCommand" map="D"/>
+  <field class="com.bnaeqa.botocrypto.service.BreadNButterService" name="lastType" map="E"/>
+  <field class="com.bnaeqa.botocrypto.service.BreadNButterService" name="dcDTO" map="F"/>
+  <field class="com.bnaeqa.botocrypto.service.BreadNButterService" name="errMsg" map="G"/>
+  <field class="com.bnaeqa.botocrypto.service.BreadNButterService" name="lastLocator" map="H"/>
+  <field class="com.bnaeqa.botocrypto.service.BreadNButterService" name="lastError" map="I"/>
+  <field class="com.bnaeqa.botocrypto.service.BreadNButterService" name="names" map="J"/>
+  <field class="com.bnaeqa.botocrypto.service.BreadNButterService" name="rand" map="K"/>
+  <field class="com.bnaeqa.botocrypto.service.BreadNButterService" name="driver" map="L"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="boolean sendText(java.lang.String, java.lang.String, java.lang.String)" map="A"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$2(io.appium.java_client.android.AndroidDriver)" map="A"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="boolean joinDiscordServer5(com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO)" map="A"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$16(io.appium.java_client.android.AndroidDriver)" map="B"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="void run()" map="run"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$9(io.appium.java_client.android.AndroidDriver)" map="C"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="void reopenBrave(com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO)" map="B"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$33(io.appium.java_client.android.AndroidDriver)" map="D"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="boolean checkAppInstalled(java.lang.String, java.lang.String)" map="A"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$24(io.appium.java_client.android.AndroidDriver)" map="E"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$1(io.appium.java_client.android.AndroidDriver)" map="F"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="void setStatus(java.lang.String, java.lang.String)" map="B"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$15(io.appium.java_client.android.AndroidDriver)" map="G"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="boolean createDiscord4(com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO)" map="C"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$8(io.appium.java_client.android.AndroidDriver)" map="H"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="java.util.List getElementList(java.lang.String, java.lang.String)" map="C"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$32(io.appium.java_client.android.AndroidDriver)" map="I"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="void tap(double, double, java.lang.String)" map="A"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$23(io.appium.java_client.android.AndroidDriver)" map="J"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="boolean start1(com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO)" map="D"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="boolean clickOrWait(java.lang.String, java.lang.String, java.lang.String)" map="B"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$14(io.appium.java_client.android.AndroidDriver)" map="K"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="void setDto(com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO)" map="E"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="boolean doTasksAndFollows7(com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO)" map="F"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$7(io.appium.java_client.android.AndroidDriver)" map="L"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$31(io.appium.java_client.android.AndroidDriver)" map="M"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="boolean checkOrUncheck(java.lang.String, java.lang.String, java.lang.String)" map="C"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$22(io.appium.java_client.android.AndroidDriver)" map="N"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="boolean startRobot(com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO, javax.swing.JButton)" map="A"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="void resetApp(java.lang.String, java.lang.String)" map="D"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$13(io.appium.java_client.android.AndroidDriver)" map="O"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$getCurrentUrl$35(io.appium.java_client.android.AndroidDriver)" map="P"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="java.lang.String getCurrentUrl()" map="A"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="boolean createX3(com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO)" map="G"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$29(io.appium.java_client.android.AndroidDriver)" map="Q"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$6(io.appium.java_client.android.AndroidDriver)" map="R"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$30(io.appium.java_client.android.AndroidDriver)" map="S"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="boolean loginGoogle2(com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO)" map="H"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$21(io.appium.java_client.android.AndroidDriver)" map="T"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="boolean createBreadNButter6(com.bnaeqa.botocrypto.dto.DeviceConfigurationDTO)" map="I"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$12(io.appium.java_client.android.AndroidDriver)" map="U"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$28(io.appium.java_client.android.AndroidDriver)" map="V"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="void sendWords(java.lang.String, java.lang.String)" map="E"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$5(io.appium.java_client.android.AndroidDriver)" map="W"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$19(io.appium.java_client.android.AndroidDriver)" map="X"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$20(io.appium.java_client.android.AndroidDriver)" map="Y"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="void pressEnter(java.lang.String)" map="A"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$loginGoogle2$0(io.appium.java_client.android.AndroidDriver)" map="Z"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$11(io.appium.java_client.android.AndroidDriver)" map="_"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$27(io.appium.java_client.android.AndroidDriver)" map="a"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$4(io.appium.java_client.android.AndroidDriver)" map="b"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$18(io.appium.java_client.android.AndroidDriver)" map="c"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$10(io.appium.java_client.android.AndroidDriver)" map="d"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="void pressTab(java.lang.String)" map="B"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$26(io.appium.java_client.android.AndroidDriver)" map="e"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$17(io.appium.java_client.android.AndroidDriver)" map="f"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$3(io.appium.java_client.android.AndroidDriver)" map="g"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="void setLog(java.awt.Component)" map="A"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$34(io.appium.java_client.android.AndroidDriver)" map="h"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="void scroll(int, java.lang.String)" map="A"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="void printException(java.lang.String)" map="C"/>
+  <method class="com.bnaeqa.botocrypto.service.BreadNButterService" name="org.openqa.selenium.WebElement lambda$createX3$25(io.appium.java_client.android.AndroidDriver)" map="i"/>
+  <class name="com.bnaeqa.botocrypto.service.ConfigService" map="B"/>
+  <field class="com.bnaeqa.botocrypto.service.ConfigService" name="password" map="A"/>
+  <field class="com.bnaeqa.botocrypto.service.ConfigService" name="email" map="B"/>
+  <method class="com.bnaeqa.botocrypto.service.ConfigService" name="boolean loadConfig(javax.swing.JTextArea)" map="A"/>
+  <method class="com.bnaeqa.botocrypto.service.ConfigService" name="java.lang.String writeConfigLine(java.lang.String, java.lang.String)" map="A"/>
+  <method class="com.bnaeqa.botocrypto.service.ConfigService" name="boolean saveConfig()" map="A"/>
+  <class name="com.bnaeqa.botocrypto.service.AppiumService" map="C"/>
+  <field class="com.bnaeqa.botocrypto.service.AppiumService" name="service" map="A"/>
+  <field class="com.bnaeqa.botocrypto.service.AppiumService" name="driver" map="B"/>
+  <method class="com.bnaeqa.botocrypto.service.AppiumService" name="io.appium.java_client.android.AndroidDriver getDriver()" map="A"/>
+  <method class="com.bnaeqa.botocrypto.service.AppiumService" name="java.lang.String startAppiumServer(java.lang.String)" map="A"/>
+  <class name="com.bnaeqa.botocrypto.service.TaskService" map="D"/>
+  <field class="com.bnaeqa.botocrypto.service.TaskService" name="mulai" map="A"/>
+  <field class="com.bnaeqa.botocrypto.service.TaskService" name="log" map="B"/>
+  <method class="com.bnaeqa.botocrypto.service.TaskService" name="void doJob()" map="A"/>
+  <method class="com.bnaeqa.botocrypto.service.TaskService" name="void run()" map="run"/>
+  <package name="com.bnaeqa.botocrypto.util" map="B"/>
+  <class name="com.bnaeqa.botocrypto.util.Constants" map="A"/>
+  <field class="com.bnaeqa.botocrypto.util.Constants" name="ACCOUNTS_COUNT" map="A"/>
+  <field class="com.bnaeqa.botocrypto.util.Constants" name="ACCOUNTS" map="B"/>
+  <field class="com.bnaeqa.botocrypto.util.Constants" name="TASKS" map="C"/>
+  <field class="com.bnaeqa.botocrypto.util.Constants" name="LOOP" map="D"/>
+  <field class="com.bnaeqa.botocrypto.util.Constants" name="APPIUM_TIMEOUT" map="E"/>
+  <field class="com.bnaeqa.botocrypto.util.Constants" name="APP_VERSION" map="F"/>
+  <field class="com.bnaeqa.botocrypto.util.Constants" name="LOG" map="G"/>
+  <field class="com.bnaeqa.botocrypto.util.Constants" name="REFERRAL_CODE" map="H"/>
+  <field class="com.bnaeqa.botocrypto.util.Constants" name="CONFIGURED" map="I"/>
+  <field class="com.bnaeqa.botocrypto.util.Constants" name="CACHE_LOCATION" map="J"/>
+  <field class="com.bnaeqa.botocrypto.util.Constants" name="DEFAULT_LOCATION" map="K"/>
+  <field class="com.bnaeqa.botocrypto.util.Constants" name="DEVICES" map="L"/>
+  <field class="com.bnaeqa.botocrypto.util.Constants" name="STEP" map="M"/>
+  <field class="com.bnaeqa.botocrypto.util.Constants" name="APPIUM_LOCATION" map="N"/>
+  <field class="com.bnaeqa.botocrypto.util.Constants" name="THREAD_RUNNING" map="O"/>
+  <field class="com.bnaeqa.botocrypto.util.Constants" name="APPIUM_POLLING" map="P"/>
+  <field class="com.bnaeqa.botocrypto.util.Constants" name="CRYPTO_INDEX" map="Q"/>
+  <field class="com.bnaeqa.botocrypto.util.Constants" name="CURRENT_ACCOUNT" map="R"/>
+  <field class="com.bnaeqa.botocrypto.util.Constants" name="CONFIG" map="S"/>
+  <method class="com.bnaeqa.botocrypto.util.Constants" name="java.lang.String printLogLnAf(java.lang.String)" map="A"/>
+  <method class="com.bnaeqa.botocrypto.util.Constants" name="java.lang.String printLogLn(java.lang.String)" map="B"/>
+  <method class="com.bnaeqa.botocrypto.util.Constants" name="java.lang.String printLog(java.lang.String)" map="C"/>
+  <method class="com.bnaeqa.botocrypto.util.Constants" name="java.lang.String currentDate()" map="A"/>
+  <method class="com.bnaeqa.botocrypto.util.Constants" name="void showInfoDialog(java.lang.String)" map="D"/>
+  <method class="com.bnaeqa.botocrypto.util.Constants" name="java.lang.String printTaskLogLnAf(java.lang.String)" map="E"/>
+  <method class="com.bnaeqa.botocrypto.util.Constants" name="void showErrorDialog(java.lang.String)" map="F"/>
+  <method class="com.bnaeqa.botocrypto.util.Constants" name="void showWarningDialog(java.lang.String)" map="G"/>
+  <method class="com.bnaeqa.botocrypto.util.Constants" name="java.lang.String printTaskLog(java.lang.String)" map="H"/>
+  <package name="com.bnaeqa.botocrypto.ui" map="C"/>
+  <class name="com.bnaeqa.botocrypto.ui.MainUI$6" map="6"/>
+  <field class="com.bnaeqa.botocrypto.ui.MainUI$6" name="val$log" map="A"/>
+  <field class="com.bnaeqa.botocrypto.ui.MainUI$6" name="val$namaPerangkat" map="B"/>
+  <method class="com.bnaeqa.botocrypto.ui.MainUI$6" name="void focusGained(java.awt.event.FocusEvent)" map="focusGained"/>
+  <method class="com.bnaeqa.botocrypto.ui.MainUI$6" name="void focusLost(java.awt.event.FocusEvent)" map="focusLost"/>
+  <class name="com.bnaeqa.botocrypto.ui.MainUI$5" map="5"/>
+  <field class="com.bnaeqa.botocrypto.ui.MainUI$5" name="val$log" map="A"/>
+  <field class="com.bnaeqa.botocrypto.ui.MainUI$5" name="val$referralCode" map="B"/>
+  <method class="com.bnaeqa.botocrypto.ui.MainUI$5" name="void focusGained(java.awt.event.FocusEvent)" map="focusGained"/>
+  <method class="com.bnaeqa.botocrypto.ui.MainUI$5" name="void focusLost(java.awt.event.FocusEvent)" map="focusLost"/>
+  <class name="com.bnaeqa.botocrypto.ui.MainUI$4" map="4"/>
+  <field class="com.bnaeqa.botocrypto.ui.MainUI$4" name="val$log" map="A"/>
+  <method class="com.bnaeqa.botocrypto.ui.MainUI$4" name="void actionPerformed(java.awt.event.ActionEvent)" map="actionPerformed"/>
+  <class name="com.bnaeqa.botocrypto.ui.MainUI$3" map="3"/>
+  <method class="com.bnaeqa.botocrypto.ui.MainUI$3" name="void actionPerformed(java.awt.event.ActionEvent)" map="actionPerformed"/>
+  <class name="com.bnaeqa.botocrypto.ui.MainUI$2" map="2"/>
+  <field class="com.bnaeqa.botocrypto.ui.MainUI$2" name="val$mulai" map="A"/>
+  <field class="com.bnaeqa.botocrypto.ui.MainUI$2" name="val$tipeCrypto" map="B"/>
+  <field class="com.bnaeqa.botocrypto.ui.MainUI$2" name="val$referralCode" map="C"/>
+  <field class="com.bnaeqa.botocrypto.ui.MainUI$2" name="val$log" map="D"/>
+  <field class="com.bnaeqa.botocrypto.ui.MainUI$2" name="val$namaPerangkat" map="E"/>
+  <method class="com.bnaeqa.botocrypto.ui.MainUI$2" name="void actionPerformed(java.awt.event.ActionEvent)" map="actionPerformed"/>
+  <class name="com.bnaeqa.botocrypto.ui.MainUI$1" map="1"/>
+  <field class="com.bnaeqa.botocrypto.ui.MainUI$1" name="val$tipeCrypto" map="A"/>
+  <method class="com.bnaeqa.botocrypto.ui.MainUI$1" name="void itemStateChanged(java.awt.event.ItemEvent)" map="itemStateChanged"/>
+  <class name="com.bnaeqa.botocrypto.ui.MainUI$8" map="8"/>
+  <field class="com.bnaeqa.botocrypto.ui.MainUI$8" name="val$log" map="A"/>
+  <method class="com.bnaeqa.botocrypto.ui.MainUI$8" name="void propertyChange(java.beans.PropertyChangeEvent)" map="propertyChange"/>
+  <class name="com.bnaeqa.botocrypto.ui.MainUI$7" map="7"/>
+  <field class="com.bnaeqa.botocrypto.ui.MainUI$7" name="val$namaPerangkat" map="A"/>
+  <method class="com.bnaeqa.botocrypto.ui.MainUI$7" name="void mouseExited(java.awt.event.MouseEvent)" map="mouseExited"/>
+  <method class="com.bnaeqa.botocrypto.ui.MainUI$7" name="void mouseEntered(java.awt.event.MouseEvent)" map="mouseEntered"/>
+  <method class="com.bnaeqa.botocrypto.ui.MainUI$7" name="void mouseReleased(java.awt.event.MouseEvent)" map="mouseReleased"/>
+  <method class="com.bnaeqa.botocrypto.ui.MainUI$7" name="void mousePressed(java.awt.event.MouseEvent)" map="mousePressed"/>
+  <method class="com.bnaeqa.botocrypto.ui.MainUI$7" name="void mouseClicked(java.awt.event.MouseEvent)" map="mouseClicked"/>
+  <class name="com.bnaeqa.botocrypto.ui.MainUI" map="A"/>
+  <field class="com.bnaeqa.botocrypto.ui.MainUI" name="logY" map="A"/>
+  <field class="com.bnaeqa.botocrypto.ui.MainUI" name="logX" map="B"/>
+  <method class="com.bnaeqa.botocrypto.ui.MainUI" name="void main(java.lang.String[])" map="A"/>
+  <method class="com.bnaeqa.botocrypto.ui.MainUI" name="int getLogY()" map="A"/>
+  <method class="com.bnaeqa.botocrypto.ui.MainUI" name="int getLogX()" map="B"/>
+  <method class="com.bnaeqa.botocrypto.ui.MainUI" name="void mainUI()" map="C"/>
+  <method class="com.bnaeqa.botocrypto.ui.MainUI" name="void setGlobalSize(java.awt.Component, java.awt.Dimension)" map="A"/>
+  <method class="com.bnaeqa.botocrypto.ui.MainUI" name="void appendLog(javax.swing.JTextArea, java.lang.String)" map="A"/>
+  <class name="com.bnaeqa.botocrypto.ui.ComboItem" map="B"/>
+  <field class="com.bnaeqa.botocrypto.ui.ComboItem" name="key" map="A"/>
+  <field class="com.bnaeqa.botocrypto.ui.ComboItem" name="value" map="B"/>
+  <method class="com.bnaeqa.botocrypto.ui.ComboItem" name="java.lang.String getValue()" map="A"/>
+  <method class="com.bnaeqa.botocrypto.ui.ComboItem" name="java.lang.String getKey()" map="B"/>
+  <method class="com.bnaeqa.botocrypto.ui.ComboItem" name="java.lang.String toString()" map="toString"/>
+  <class name="com.bnaeqa.botocrypto.ui.KonfigurasiAkunUI$5" map="5"/>
+  <field class="com.bnaeqa.botocrypto.ui.KonfigurasiAkunUI$5" name="val$frame" map="A"/>
+  <method class="com.bnaeqa.botocrypto.ui.KonfigurasiAkunUI$5" name="void actionPerformed(java.awt.event.ActionEvent)" map="actionPerformed"/>
+  <class name="com.bnaeqa.botocrypto.ui.KonfigurasiAkunUI$4" map="4"/>
+  <field class="com.bnaeqa.botocrypto.ui.KonfigurasiAkunUI$4" name="val$table1" map="A"/>
+  <method class="com.bnaeqa.botocrypto.ui.KonfigurasiAkunUI$4" name="void propertyChange(java.beans.PropertyChangeEvent)" map="propertyChange"/>
+  <class name="com.bnaeqa.botocrypto.ui.KonfigurasiAkunUI$3" map="3"/>
+  <field class="com.bnaeqa.botocrypto.ui.KonfigurasiAkunUI$3" name="val$log" map="A"/>
+  <field class="com.bnaeqa.botocrypto.ui.KonfigurasiAkunUI$3" name="val$frame" map="B"/>
+  <field class="com.bnaeqa.botocrypto.ui.KonfigurasiAkunUI$3" name="val$table1" map="C"/>
+  <method class="com.bnaeqa.botocrypto.ui.KonfigurasiAkunUI$3" name="void actionPerformed(java.awt.event.ActionEvent)" map="actionPerformed"/>
+  <class name="com.bnaeqa.botocrypto.ui.KonfigurasiAkunUI$2" map="2"/>
+  <field class="com.bnaeqa.botocrypto.ui.KonfigurasiAkunUI$2" name="val$table1" map="A"/>
+  <method class="com.bnaeqa.botocrypto.ui.KonfigurasiAkunUI$2" name="void keyPressed(java.awt.event.KeyEvent)" map="keyPressed"/>
+  <method class="com.bnaeqa.botocrypto.ui.KonfigurasiAkunUI$2" name="void keyTyped(java.awt.event.KeyEvent)" map="keyTyped"/>
+  <method class="com.bnaeqa.botocrypto.ui.KonfigurasiAkunUI$2" name="void keyReleased(java.awt.event.KeyEvent)" map="keyReleased"/>
+  <class name="com.bnaeqa.botocrypto.ui.KonfigurasiAkunUI$1" map="1"/>
+  <method class="com.bnaeqa.botocrypto.ui.KonfigurasiAkunUI$1" name="void propertyChange(java.beans.PropertyChangeEvent)" map="propertyChange"/>
+  <class name="com.bnaeqa.botocrypto.ui.KonfigurasiAkunUI" map="C"/>
+  <method class="com.bnaeqa.botocrypto.ui.KonfigurasiAkunUI" name="void initComponents(java.awt.Component)" map="A"/>
+  <field class="com.bnaeqa.botocrypto.Main" name="cfgPath" map="A"/>
+</map>
+</yguard>

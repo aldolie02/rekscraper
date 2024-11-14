@@ -1,0 +1,83 @@
+
+plugins {
+	id 'java'
+	id 'application'
+}
+
+group = 'com.bnaeqa.rekeningscraper'
+version = '1.0-BCA'
+
+repositories {
+	mavenCentral()
+	maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+	implementation 'com.miglayout:miglayout-swing:11.4.2'
+	compileOnly 'com.yworks:yguard:4.1.1'
+
+	implementation 'org.apache.httpcomponents:httpclient:4.5.14'
+
+	implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.13.0'
+	implementation 'org.projectlombok:lombok:1.18.28'
+	annotationProcessor 'org.projectlombok:lombok:1.18.28'
+	annotationProcessor 'org.projectlombok:lombok'
+	implementation 'org.json:json:20231013'
+}
+
+application {
+	mainClassName = 'com.bnaeqa.rekeningscraper.Main'
+}
+
+jar {
+	duplicatesStrategy(DuplicatesStrategy.EXCLUDE)
+	manifest {
+		attributes 'Main-Class': application.mainClassName
+	}
+	baseName 'rekeningscraper'
+}
+
+task copyRuntimeLibs(type: Copy) {
+	from(sourceSets.main.runtimeClasspath){ include '*.jar' }
+	into('build/libs2/')
+}
+
+task yguard {
+	dependsOn copyRuntimeLibs
+	dependsOn jar
+
+	group 'yGuard'
+	description 'Obfuscates and shrinks the java archive.'
+
+	doLast {
+		def archivePath = jar.archiveFile.get().asFile.path
+		def unobfJar = archivePath.replace(".jar", "_unobf.jar")
+
+		ant.move(file: archivePath, tofile: unobfJar, verbose: true)
+
+		ant.taskdef(
+				name: 'yguard',
+				classname: 'com.yworks.yguard.YGuardTask',
+				classpath: sourceSets.main.compileClasspath.asPath
+		)
+
+		ant.yguard {
+			inoutpair(in: unobfJar, out: archivePath)
+			rename(logfile: "${buildDir}/${rootProject.name}_renamelog.xml") {
+				keep {
+					'method'(name: 'void main(java.lang.String[])', class: application.mainClassName)
+					'class' (name: 'com.bnaeqa.rekeningscraper.Main')
+					'class'(classes: 'public', methods: 'public', fields: 'private'){
+						patternset {
+							exclude(name: 'com.bnaeqa.rekeningscraper.*')
+							include(name: 'com.bnaeqa.rekeningscraper.dto.*')
+						}
+					}
+
+				}
+			}
+		}
+	}
+}
+
+assemble.dependsOn yguard
